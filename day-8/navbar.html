@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(119, 77, 119);
+        display: block;
+        text-decoration: none;
+    }
+
+    ul li {
+        float: left;
+    }
+
+    ul li a {
+
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        background-color: #111111;
+    }
+
+    .h1 {
+        background-color: rgb(212, 148, 212);
+        text-align: center;
+        height: 300px;
+        padding: 50px;
+        border-radius: 25px;
+
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        background-color: rgb(119, 77, 119);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    li .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 200px;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: #f1f1f1;
+    }
+
+    .dropdown-content a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .submenu {
+        position: relative;
+
+    }
+
+    .dropdown-content .d1 {
+        display: none;
+        left: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 20;
+        min-width: 150px;
+    }
+
+    .submenu:hover .d1 {
+        display: block;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">login</a></li>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <div class="submenu">
+                    <a href="#">Web Development</a>
+                    <div class="d1">
+                        <a href="#">Frontend Design</a>
+                        <a href="#">Backend Development</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Digital Marketing</a>
+                    <div class="d1">
+                        <a href="#">SEO Optimization</a>
+                        <a href="#">Social Media</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Graphic Design</a>
+                    <div class="d1">
+                        <a href="#">Logo & Branding</a>
+                        <a href="#">UI/UX Design</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br>
+    <div class="h1">
+        <h1>Welcome To Site</h1>
+
+        <h2>Horizontal Navigation Bar</h2>
+
+        <pre><h4>       In a horizontal navigation bar, the navigation links are stacked horizontally (next to each other), and is typically aligned on the top of a webpage.
+
+       The basics of a horizontal navigation bar is an unordered list (ul), with list items (li), each holding a link (a), as shown in the Navbar Intro page.
+
+       It is also common to add a nav element around the ul element, that will serve as a container for your navigation bar.
+
+    </h4></pre>
+    </div>
+</body>
+
+</html>

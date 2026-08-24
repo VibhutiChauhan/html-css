@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2(3)</title>
+</head>
+<style>
+    *{
+        background-color: black;
+        color: white;
+     }
+     table,
+     tr,
+     td{
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+       
+        border-collapse: collapse;
+     }
+    .h5{
+        text-align: center;
+        color: blue;
+    }
+    .t1{
+        color: rgb(238, 103, 54);
+    }
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=checkbox],
+    select{
+        background-color: white;
+        color: black;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td colspan="2"><h4 class="h5">REGISTRATION FOR IIPL JOBFAIR IS FREEAND EASY!</h4></td>
+        </tr>
+         <tr>
+           <td colspan="2"><h5>Registration provide free and instand access to breaking news,review,online classified and more on iipl-jobfair.</h5></td>
+        </tr> 
+        <tr>
+            <td class="t1">Create a Account(Required)</td>
+        </tr>
+        <tr>
+            <td>Choose a Member ID:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Choose a Password:</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Re-enter your Password:</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Secret Question:</td>
+            <td>
+                <select name="Secret" id="Secret">
+                    <option value="--select--">--select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Secret Answer:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>E-mail Address:</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>iipl-jobfair will only use this address with your premission.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">Remember my member ID and password on this computer.</td>
+        </tr>
+        <tr>
+            <td class="t1">Tell US about youeself(Required)</td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio">Male
+                <input type="radio">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Year of Birth:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Zip Code:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Country of residence:</td>
+            <td>
+                <select name="Country" id="Country">
+                    <option value="--select--">--select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </td>
+       </tr>
+       <tr>
+            <td>Household Income:</td>
+            <td>
+                <select name="income" id="income">
+                    <option value="--select--">--select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </td>
+       </tr>
+        </table>
+</body>
+</html>

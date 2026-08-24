@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task 4</title>
+</head>
+<style>
+  .switch {
+    width: 60px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 1s;
+    /* TODO: transition background-color */
+  }
+
+  .switch.active {
+    background: #22c55e;
+  }
+
+  .knob {
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 1s;
+    /* TODO: transition transform/left */
+  }
+
+  .switch.active .knob {
+    /* TODO: move knob to the right */
+    transform: translateX(30px);
+  }
+
+  .d1 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    transition: width 4s, height 4s, background-color 6s;
+  }
+
+  .d1:hover {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(164, 238, 182);
+  }
+
+  .switch.active .d1 {
+    display: block;
+  }
+
+  body:has(.switch.active) .d1 {
+    display: block;
+
+  }
+</style>
+
+<body>
+  <div class="switch" onclick="this.classList.toggle('active')">
+    <div class="knob"></div>
+  </div>
+  <div class="d1"></div>
+</body>
+
+</html>

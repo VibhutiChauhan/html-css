@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1(4)</title>
+</head>
+<style>
+    *{
+        background-color: black;
+        color: white;
+        border-collapse: collapse;
+    }
+    table,
+    th,
+    tr,
+    td{
+        border: 1px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .heading{
+        text-align: center;
+        height: 70px;
+        font-size: large;
+        font-weight: bold;
+    }
+    .label{
+        width:120px;
+        font-weight:bold;
+    }
+    input[type=text],
+    input[type=password],
+    input[type=submit],
+    input[type=reset],
+    input[type=button],
+    textarea,
+    select{
+        background-color: white;
+        color: black;
+        padding: 2px 8px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td colspan="2" class="heading">Registration Form</td>
+        </tr>
+        <tr>
+            <td class="label">Name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="label">Password:</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td class="label">Address:</td>
+            <td> <textarea name="Address" id="Address"></textarea> </td>
+        </tr>
+        <tr>
+            <td class="label">Gender:</td>
+            <td><input type="radio" id="male" name="gender">
+                <label for="text">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="text">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Hobby:</td>
+            <td><input type="checkbox" name="hobby">
+                <label for="text">H1</label>
+                <input type="checkbox" name="hobby">
+                <label for="text">H2</label>
+                <input type="checkbox" name="hobby">
+                <label for="text">H3</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">City:</td>
+            <td>
+                <select name="city" id="city">
+                    <option value="--select--">--select--</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Surat">Surat"</option>
+                    <option value="Dwarka">Dwarka</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Upload Photo:</td>
+            <td><input type="file" id="photoUpload" name="photoUpload" accept="image/*"></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td>
+                <input type="Submit" value="Submit">
+                <input type="reset" value="Clear">
+                <input type="button" value="Login">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

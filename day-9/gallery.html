@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+</head>
+<style>
+    h2 {
+        color: black;
+        text-shadow: 1px 1px 2px white, 1 1 25px rgb(66, 66, 184), 1 1 5px rgb(32, 32, 136);
+    }
+
+    .gallery {
+        display: flex;
+    }
+
+    .g-items {
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 4px 4px rgb(211, 226, 231);
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .desc {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .g-items:hover {
+        opacity: 0.4;
+    }
+</style>
+
+<body>
+    <h2>image gallery</h2>
+    <div class="gallery">
+        <div class="g-items">
+            <a href="./istockphoto-479824818-612x612.jpg">
+                <img src="./istockphoto-479824818-612x612.jpg" alt="">
+            </a>
+            <div class="desc">Cinque Terre</div>
+
+        </div>
+        <div class="g-items">
+            <a href="./photo-1590273466070-40c466b4432d.avif">
+                <img src="./photo-1590273466070-40c466b4432d.avif" alt="">
+            </a>
+            <div class="desc">Green Forest</div>
+
+        </div>
+        <div class="g-items">
+            <a href="./beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.avif">
+                <img src="./beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.avif"
+                    alt="">
+            </a>
+            <div class="desc">Mountains</div>
+
+        </div>
+        <div class="g-items">
+            <a href="./Lake_MariJääskeläinen+.jpg">
+                <img src="./Lake_MariJääskeläinen+.jpg" alt="">
+            </a>
+            <div class="desc">Northern Lights</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 7</title>
+</head>
+<style>
+    .progress-track {
+        width: 300px;
+        height: 16px;
+        background: #e5e7eb;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: #3b82f6;
+        width: 0%;
+        animation: fill 1.5s ease-in-out forwards;
+        /* TODO: animate width from 0% to 75%, run once, ease-out, forwards */
+    }
+
+    @keyframes fill {
+        to {
+            width: 75%;
+        }
+    }
+</style>
+<div class="progress-track">
+    <div class="progress-fill"></div>
+</div>
+
+<body>
+
+</body>
+
+</html>

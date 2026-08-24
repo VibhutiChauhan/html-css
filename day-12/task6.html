@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6</title>
+</head>
+<style>
+    body {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 10%;
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+        animation: pulse 3s ease-in-out infinite;
+        /* TODO: animation, infinite, ease-in-out */
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        70% {
+            transform: scale(2);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(2);
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="dot"></div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+
+    }
+
+    video {
+        width: 200px;
+        height: 110px;
+    }
+
+    table,
+    tr,
+    td {
+        border: 1px solid wheat;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .a {
+        border-style: outset;
+        height: 100%;
+        width: 100%;
+        border-spacing: 5px;
+        border-color: gray(15, 15, 15);
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend style="text-align: center;">html5 tags</legend>
+        <img src="./Screenshot 2026-07-25 150641.png" alt="" width="400px" height="250px">
+
+        <video controls muted autoplay>
+            <source src="./1.mp4">
+        </video>
+
+        <audio controls muted autoplay>
+            <source src="./1.mp4">
+        </audio>
+        <hr>
+        <svg viewBox="0 0 900 150" style="width: 100%; height: auto; display: block; background: transparent;">
+
+            <g fill="red">
+                <rect x="15" y="32" width="140" height="100" />
+                <circle cx="190" cy="82" r="50" />
+                <ellipse cx="265" cy="82" rx="35" ry="60" />
+
+            </g>
+
+
+            <line x1="330" y1="15" x2="350" y2="140" stroke="yellow" stroke-width="" />
+
+
+            <polygon points="440,15 475,82 440,149 405,82" fill="none" stroke="yellow" stroke-width="" />
+
+            <polygon points="545,15 558,68 610,68 568,98 584,147 545,116 506,147 522,98 480,68 532,68" fill="red"
+                stroke="yellow" stroke />
+        </svg>
+        <hr>
+
+        <table class="center" width="300px" height="200px">
+
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="3">3</td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="a">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>5</td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+
+
+            </tr>
+        </table>
+
+    </fieldset>
+</body>
+
+</html>
